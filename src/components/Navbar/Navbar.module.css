@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--azul-escuro);
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--azul-escuro);
+    gap: 8px;
+    padding: 16px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    display: inline-block;
+    border-bottom: 1.5px solid var(--branco);
+    border-width: 60%;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.navbar a:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+

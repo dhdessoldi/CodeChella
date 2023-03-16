@@ -1,0 +1,25 @@
+.button {
+
+    background-color: var(--azul-escuro);
+    border: none;
+    border-radius: 16px;
+    box-shadow:  4px 4px 0px #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 20;
+    font-family: var(--text-font);
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.button a p {
+    margin: 0;
+}
