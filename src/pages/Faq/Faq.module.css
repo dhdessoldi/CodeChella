@@ -1,10 +1,21 @@
 .container {
-    margin: 0;
-    height: 300px;
+    padding: 1.5rem;
+
+    padding-bottom: 2rem;
+    height: auto;
 }
+
 
 .container h1 {
     text-align: center;
     font-size: 2rem;
     padding-top: 2rem;
+}
+
+.container__title {
+    font-family: var(--title-font);
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 2rem 1.5rem 2rem;
 }
