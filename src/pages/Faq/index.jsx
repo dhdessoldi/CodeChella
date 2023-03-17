@@ -13,12 +13,12 @@ export default function Faq() {
     {
       question: "Qual é a classificação etária?",
       answer:
-        "Será permitida a entrada apenas de pessoas maiores de 18 anos, ou maiores de 16 anos acompanhadas de um responsável",
+        "Será permitida a entrada apenas de pessoas maiores de 18 anos, ou maiores de 16 anos acompanhadas de um responsável.",
     },
     {
       question: "Quais são os setores disponíveis?",
       answer:
-        "Os setores disponíveis são: pista Comum, pista premium, cadeiras térreo e cadeiras superiores",
+        "Os setores disponíveis são: pista Comum, pista premium, cadeiras térreo e cadeiras superiores.",
     },
     {
       question: "Quais são os itens proibidos?",

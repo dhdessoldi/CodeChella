@@ -1,0 +1,14 @@
+.container {
+  margin: 0;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.container__title {
+  font-family: var(--title-font);
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 2rem 1.5rem 2rem;
+  color: var(--cinza);
+}

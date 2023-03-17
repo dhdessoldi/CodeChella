@@ -1,0 +1,19 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.dropdown label {
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    color: var(--cinza);
+}
+
+.dropdown select {
+    padding: 0.75rem;
+    border: none;
+}
