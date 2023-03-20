@@ -33,6 +33,7 @@ export default function Faq() {
         <h2 className={styles.container__title}>Perguntas Frequentes:</h2>
         {accordions.map((accordion) => (
           <SimpleAccordion
+            key={accordion.question}
             question={accordion.question}
             answer={accordion.answer}
           />

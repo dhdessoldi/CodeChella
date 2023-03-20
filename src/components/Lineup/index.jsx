@@ -10,7 +10,7 @@ export default function Lineup({lineup, mainEvent, date}) {
         <p>{mainEvent}</p>
         <ul>
             {lineup.map((band)=>
-                <li style={{fontSize:`${band.fontSize}`, fontWeight:`${band.fontWeight}`}}>{band.name}</li>
+                <li key={band.name} style={{fontSize:`${band.fontSize}`, fontWeight:`${band.fontWeight}`}}>{band.name}</li>
             )}
         </ul>
     </section>

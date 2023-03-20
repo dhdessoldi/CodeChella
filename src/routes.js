@@ -12,15 +12,14 @@ function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<BasePage />}>
-          <Route index element={<Home />}/>
-          <Route path="experience" element={<Experience />}/>
-          <Route path="layout" element={<Layout />}/>
-          <Route path="faq" element={<Faq />}/>
-          <Route path="form" element={<Form />}/>
-          <Route path="ticket" element={<Ticket />}/>
+          <Route index element={<Home />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="layout" element={<Layout />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="form" element={<Form />} />
+          <Route path="ticket" element={<Ticket />} />
         </Route>
       </Routes>
-      
     </BrowserRouter>
   );
 }

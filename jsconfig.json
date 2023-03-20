@@ -1,6 +1,23 @@
 {
     "compilerOptions": {
-        "baseUrl": "src"
+        "baseUrl": "src",
+        "paths": {
+            "home": [
+                "home"
+            ],
+            "experience": [
+                "experience"
+            ],
+            "faq": [
+                "faq"
+            ],
+            "form": [
+                "form"
+            ],
+            "ticket": [
+                "ticket"
+            ]
+        }
     },
     "include": [
         "src"

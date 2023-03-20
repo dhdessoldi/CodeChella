@@ -31,7 +31,7 @@ export default function Layout() {
           <ul>
             <li className={styles.legend}>Legenda:</li>
             {layout.map((sector) => (
-              <li className={styles.sector}>
+              <li key={sector.name} className={styles.sector}>
                 <div style={{ backgroundColor: `${sector.color}` }}></div>
                 <p>{sector.name}</p>
               </li>
@@ -41,7 +41,7 @@ export default function Layout() {
         <h3>Mais detalhes sobre os setores:</h3>
         <Card
           image="/assets/posts/layout-frame-1.svg"
-          title="Pista"
+          title="Pista Comum"
           text="Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade."
         />
         <Card
