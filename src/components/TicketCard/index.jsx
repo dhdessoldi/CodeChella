@@ -11,13 +11,15 @@ export default function TicketCard({ name, place, date }) {
         <img src={logo} alt="" />
         <img src={icon} alt="" />
       </div>
-      <img src={qrcode} alt="" />
-      <div className={styles.container__infos}>
-        <p className={styles.container__infos_name}>{name}</p>
-        <p className={styles.container__infos_text}>Ingresso Cortesia</p>
-        <p className={styles.container__infos_text}>{place}</p>
-        <p className={styles.container__infos_text}>Data: {date}</p>
-        <p className={styles.container__infos_text}>Local: São Paulo</p>
+      <div className={styles.container__content}>
+        <img className={styles.container__qrcode} src={qrcode} alt="" />
+        <div className={styles.container__infos}>
+          <p className={styles.container__infos_name}>{name}</p>
+          <p className={styles.container__infos_text}>Ingresso Cortesia</p>
+          <p className={styles.container__infos_text}>{place}</p>
+          <p className={styles.container__infos_text}>Data: {date}</p>
+          <p className={styles.container__infos_text}>Local: São Paulo</p>
+        </div>
       </div>
     </section>
   );

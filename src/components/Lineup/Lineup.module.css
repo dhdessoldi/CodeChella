@@ -14,6 +14,7 @@
     padding: 16px;
     background-color: var(--mostarda);
     margin: 0;
+    position: relative;
 }
 
 .container p {
@@ -26,9 +27,57 @@
 .container ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     padding: 0;
     list-style: none;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 0 50px;
+        padding: 0;
+    }
+
+    .date::after, .date::before {
+        content: '';
+        width: 30%;
+        flex-grow: 1;
+        height: 2px;
+        background-color: var(--mostarda);
+        position: absolute;
+        top: 50%;
+    }
+
+    .date::after {
+        right: -50%;
+    }
+
+    .date::before {
+        left: -50%;
+    }
+
+    .container ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+  
+}
+
+
+@media screen and (min-width: 1440px) {
+    .date::after, .date::before {
+        width: 120%;
+    }
+
+    .date::after {
+        right: -150%;
+    }
+
+    .date::before {
+        left: -150%;
+    }
 }

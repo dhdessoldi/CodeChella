@@ -1,15 +1,7 @@
 .container {
     padding: 1.5rem;
-
     padding-bottom: 2rem;
     height: auto;
-}
-
-
-.container h1 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
 }
 
 .container__title {
@@ -18,4 +10,24 @@
     text-align: center;
     font-size: 2rem;
     padding: 0 2rem 1.5rem 2rem;
+    color: var(--cinza);
 }
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        margin: 0 4rem;
+    }
+
+    .container__title  {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        margin: 0 15rem;
+    }
+
+}
+

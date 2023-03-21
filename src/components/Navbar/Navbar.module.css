@@ -8,7 +8,7 @@
 }
 
 .navbar {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -16,6 +16,10 @@
     background-color: var(--azul-escuro);
     gap: 8px;
     padding: 16px;
+}
+
+.show {
+    display: flex;
 }
 
 .navbar a {
@@ -32,5 +36,56 @@
 .navbar a:last-child {
     border: none;
     padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar {
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 3rem;
+    }
+
+    .navbar a {
+        border: none;
+        padding: 0;
+    }
+
+    .container__navbar_icon {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .navbar {
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 3rem;
+    }
+
+    .navbar a {
+        border: none;
+        padding: 0;
+    }
+
+    .container__navbar_icon {
+        display: none;
+    }
 }
 

@@ -19,14 +19,14 @@ export default function Form() {
   } = useContext(TicketContext);
 
   const onSubmit = (event) => {
-    event.preventDefault()
-  }
+    event.preventDefault();
+  };
 
   return (
     <>
       <Banner image="form" title="Garanta seu Ingresso" />
       <section className={styles.container}>
-        <form action="" onSubmit={onSubmit}>
+        <form className={styles.container__form} onSubmit={onSubmit}>
           <h2 className={styles.container__title}>
             Preencha o formulário a seguir:
           </h2>
@@ -46,22 +46,24 @@ export default function Form() {
             required
             placeholder="Exemplo: codechella@codechella.com"
           />
-          <Dropdown
-            label="Tipo de ingresso"
-            value={place}
-            onChange={(value) => setPlace(value)}
-            required
-          />
-          <Input
-            label="Data de nascimento:"
-            type="date"
-            value={birthdate}
-            onChange={(value) => setBirthdate(value)}
-            required
-            placeholder=""
-          />
+          <div className={styles.container__row}>
+            <Dropdown
+              label="Tipo de ingresso"
+              value={place}
+              onChange={(value) => setPlace(value)}
+              required
+            />
+            <Input
+              label="Data de nascimento:"
+              type="date"
+              value={birthdate}
+              onChange={(value) => setBirthdate(value)}
+              required
+              placeholder=""
+            />
+          </div>
           <div className={styles.container__button}>
-            <Button link='/ticket'>
+            <Button link="/ticket">
               <p>Comprar!</p>
               <img src="/assets/icons/ticket.svg" alt="" />
             </Button>

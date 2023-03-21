@@ -10,6 +10,7 @@ export default function Footer() {
         <Link to="/">
           <img src={logo} alt="Logo da CodeChella" />
         </Link>
+        <div className={styles.social}>
         <p>Acesse nossas redes:</p>
         <ul className={styles.links}>
           <a href="https://web.whatsapp.com"><img src="/assets/icons/whatsapp.svg" alt="logo do whatsapp" /></a>
@@ -17,6 +18,7 @@ export default function Footer() {
           <a href="https://instagram.com"><img src="/assets/icons/instagram.svg" alt="logo do whatsapp" /></a>
           <a href="https://twitter.com"><img src="/assets/icons/twitter.svg" alt="logo do whatsapp" /></a>
         </ul>
+        </div>
       </div>
       <p>Desenvolvido por Daniel.<br/>
       Projeto fictício sem fins comerciais.</p>

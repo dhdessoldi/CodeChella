@@ -15,3 +15,24 @@
     font-weight: 400;
     font-size: 2rem;
 }
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        height: 384px;
+    }
+
+    .container h1 {
+        font-size: 64px;
+    }
+  
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        height: 407px;
+    }
+    
+}
+

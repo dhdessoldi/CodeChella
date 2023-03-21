@@ -5,61 +5,49 @@ import { Link } from "react-router-dom";
 import navbarIcon from "./navbar-icon.svg";
 
 export default function Navbar() {
-  const [toggle, setToggle] = useState(false);
+  const [show, setShow] = useState('false')
+
   return (
     <header className={styles.container}>
       <Link
         to="/"
-        onClick={() => {
-          setToggle(false);
-        }}
+        onClick={()=>setShow('false')}
       >
         <img src={logo} alt="Logo do CodeChella" />
       </Link>
       <div>
         <img
+          className={styles.container__navbar_icon}
           src={navbarIcon}
           alt=""
-          onClick={() => {
-            setToggle(!toggle);
-          }}
-        />
-        {toggle && (
-          <nav className={styles.navbar}>
-            <Link
-              to="/experience"
-              onClick={() => {
-                setToggle(false);
-              }}
-            >
-              A experiência
-            </Link>
-            <Link
-              to="/layout"
-              onClick={() => {
-                setToggle(false);
-              }}
-            >
-              Mapa de Setores
-            </Link>
-            <Link
-              to="/faq"
-              onClick={() => {
-                setToggle(false);
-              }}
-            >
-              Informações
-            </Link>
-            <Link
-              to="/form"
-              onClick={() => {
-                setToggle(!toggle);
-              }}
-            >
-              Ingresso
-            </Link>
-          </nav>
-        )}
+          onClick={()=>setShow(!show)}
+                  />
+        <nav id="navbar" className={[styles.navbar, (!show?styles.show:'')].join(' ')}>
+          <Link
+            to="/experience"
+            onClick={()=>setShow(!show)}
+          >
+            A experiência
+          </Link>
+          <Link
+            to="/layout"
+            onClick={()=>setShow(!show)}
+          >
+            Mapa de Setores
+          </Link>
+          <Link
+            to="/faq"
+            onClick={()=>setShow(!show)}
+          >
+            Informações
+          </Link>
+          <Link
+            to="/form"
+            onClick={()=>setShow(!show)}
+          >
+            Ingresso
+          </Link>
+        </nav>
       </div>
     </header>
   );

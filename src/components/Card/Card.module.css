@@ -1,5 +1,5 @@
 .container {
-    margin: 32px 24px;
+    margin: 2rem 1.5rem;
     text-align: center;
 }
 
@@ -17,3 +17,25 @@
     font-weight: 500;
     line-height: 40px;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 2rem 80px;
+    }
+
+    .container h1 {
+        font-size: 64px;
+    }
+  
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        margin: 4rem 80px;
+        gap: 3rem;
+    }
+    
+}
+

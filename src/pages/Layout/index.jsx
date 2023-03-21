@@ -22,6 +22,7 @@ export default function Layout() {
       color: "#3F51B5",
     },
   ];
+
   return (
     <>
       <Banner image="layout" title="Mapa de Setores" />
@@ -39,21 +40,26 @@ export default function Layout() {
           </ul>
         </div>
         <h3>Mais detalhes sobre os setores:</h3>
-        <Card
-          image="/assets/posts/layout-frame-1.svg"
-          title="Pista Comum"
-          text="Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade."
-        />
-        <Card
-          image="/assets/posts/layout-frame-2.svg"
-          title="Pista Premium"
-          text="Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área."
-        />
-        <Card
-          image="/assets/posts/layout-frame-3.svg"
-          title="Cadeiras"
-          text="Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas."
-        />
+        <div className={styles.container__cards}>
+          <Card
+            style={{ flexDirection: "column", margin:0 }}
+            image="/assets/posts/layout-frame-1.svg"
+            title="Pista Comum"
+            text="Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade."
+          />
+          <Card
+            style={{ flexDirection: "column", margin: `4rem 0` }}
+            image="/assets/posts/layout-frame-2.svg"
+            title="Pista Premium"
+            text="Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área."
+          />
+          <Card
+            style={{ flexDirection: "column", margin:0 }}
+            image="/assets/posts/layout-frame-3.svg"
+            title="Cadeiras"
+            text="Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas."
+          />
+        </div>
       </section>
     </>
   );
