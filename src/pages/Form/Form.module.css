@@ -1,5 +1,5 @@
 .container {
-  margin: 0;
+  margin: 0 auto;
   height: auto;
   padding-bottom: 3rem;
 }
@@ -24,7 +24,7 @@
 @media screen and (min-width: 768px) {
 
   .container {
-      margin: 0 4rem;
+      max-width: 648px;
   }
 
   .container__title  {
@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 1440px) {
   .container {
-      margin: 0 20rem;
+      max-width: 795px;
   }
 
   .container__row {

@@ -28,7 +28,7 @@ export default function Layout() {
       <Banner image="layout" title="Mapa de Setores" />
       <section className={styles.container}>
         <div className={styles.layout}>
-          <img src="/assets/posts/sector-map.svg" alt="" />
+          <img src="/assets/posts/sector-map.png" alt="" />
           <ul>
             <li className={styles.legend}>Legenda:</li>
             {layout.map((sector) => (
@@ -43,19 +43,19 @@ export default function Layout() {
         <div className={styles.container__cards}>
           <Card
             style={{ flexDirection: "column", margin:0 }}
-            image="/assets/posts/layout-frame-1.svg"
+            image="/assets/posts/layout-frame-1.png"
             title="Pista Comum"
             text="Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade."
           />
           <Card
             style={{ flexDirection: "column", margin: `4rem 0` }}
-            image="/assets/posts/layout-frame-2.svg"
+            image="/assets/posts/layout-frame-2.png"
             title="Pista Premium"
             text="Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área."
           />
           <Card
             style={{ flexDirection: "column", margin:0 }}
-            image="/assets/posts/layout-frame-3.svg"
+            image="/assets/posts/layout-frame-3.png"
             title="Cadeiras"
             text="Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas."
           />

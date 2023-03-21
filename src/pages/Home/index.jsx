@@ -145,7 +145,7 @@ export default function Home() {
       <Banner image="home" title="Boas-vindas ao #CodeChella2023!" />
       <section className={styles.container}>
         <Card
-          image="/assets/posts/home-frame-1.svg"
+          image="/assets/posts/home-frame-1.png"
           title="< 11 e 12 de Março >
 Aluródromo de São Paulo"
           text="Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!"
