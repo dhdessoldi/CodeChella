@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styles from './Button.module.css'
 
-export default function Button({link , children}) {
+export default function Button({text}) {
   return (
-    <Link to={link}>
-      <button className={styles.button}>{children}</button>
-    </Link>
+      <button className={styles.button}>
+              <p>{text}</p>
+              <img src="/assets/icons/ticket.svg" alt="" />
+        </button>
   )
 }

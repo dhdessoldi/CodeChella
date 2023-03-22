@@ -4,6 +4,7 @@ import Dropdown from "components/Dropdown";
 import Input from "components/Input";
 import { TicketContext } from "contexts/Ticket";
 import { React, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Form.module.css";
 
 export default function Form() {
@@ -18,8 +19,11 @@ export default function Form() {
     setBirthdate,
   } = useContext(TicketContext);
 
+  const navigate = useNavigate();
+
   const onSubmit = (event) => {
     event.preventDefault();
+    navigate('/ticket')
   };
 
   return (
@@ -35,7 +39,6 @@ export default function Form() {
             type="text"
             value={name}
             onChange={(value) => setName(value)}
-            required
             placeholder="Insira seu nome completo"
           />
           <Input
@@ -43,7 +46,6 @@ export default function Form() {
             type="email"
             value={email}
             onChange={(value) => setEmail(value)}
-            required
             placeholder="Exemplo: codechella@codechella.com"
           />
           <div className={styles.container__row}>
@@ -51,22 +53,17 @@ export default function Form() {
               label="Tipo de ingresso"
               value={place}
               onChange={(value) => setPlace(value)}
-              required
             />
             <Input
               label="Data de nascimento:"
               type="date"
               value={birthdate}
               onChange={(value) => setBirthdate(value)}
-              required
               placeholder=""
             />
           </div>
           <div className={styles.container__button}>
-            <Button link="/ticket">
-              <p>Comprar!</p>
-              <img src="/assets/icons/ticket.svg" alt="" />
-            </Button>
+            <Button text='Comprar ingresso!' />
           </div>
         </form>
       </section>

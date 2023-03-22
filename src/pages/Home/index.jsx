@@ -3,6 +3,7 @@ import Button from "components/Button";
 import Card from "components/Card";
 import Lineup from "components/Lineup";
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -150,10 +151,9 @@ export default function Home() {
 Aluródromo de São Paulo"
           text="Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!"
         />
-        <Button link='/form'>
-            <p>Comprar ingresso!</p>
-            <img src="/assets/icons/ticket.svg" alt="" />
-        </Button>
+        <Link to="/form">
+          <Button text='Comprar ingresso!'/>
+        </Link>
         <h2 className={styles.title}>/Line-Up/</h2>
         <Lineup
           lineup={lineup1}
@@ -165,9 +165,7 @@ Aluródromo de São Paulo"
           date="DOMINGO <12/03>"
           mainEvent="Lana Del Ploy"
         />
-        <div
-          className={styles.image}
-        />
+        <div className={styles.image} />
       </section>
     </>
   );
