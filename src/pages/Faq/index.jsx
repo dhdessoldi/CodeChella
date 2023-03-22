@@ -18,7 +18,7 @@ export default function Faq() {
     {
       question: "Quais são os setores disponíveis?",
       answer:
-        "Os setores disponíveis são: pista Comum, pista premium, cadeiras térreo e cadeiras superiores.",
+        "Os setores disponíveis são: pista comum, pista premium, cadeiras térreo e cadeiras superiores.",
     },
     {
       question: "Quais são os itens proibidos?",
