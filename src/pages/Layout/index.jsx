@@ -28,18 +28,18 @@ export default function Layout() {
       <Banner image="layout" title="Mapa de Setores" />
       <section className={styles.container}>
         <div className={styles.layout}>
-          <img src="/assets/posts/sector-map.png" alt="" />
-          <ul>
-            <li className={styles.legend}>Legenda:</li>
+          <img className={styles.layout__image} src="/assets/posts/sector-map.png" alt="" />
+          <ul className={styles.layout__list}>
+            <li className={styles.layout__list_legend}>Legenda:</li>
             {layout.map((sector) => (
-              <li key={sector.name} className={styles.sector}>
-                <div style={{ backgroundColor: `${sector.color}` }}></div>
-                <p>{sector.name}</p>
+              <li key={sector.name} className={styles.layout__sector}>
+                <div className={styles.layout__sector_color} style={{ backgroundColor: `${sector.color}` }}></div>
+                <p className={styles.layout__sector_name}>{sector.name}</p>
               </li>
             ))}
           </ul>
         </div>
-        <h3>Mais detalhes sobre os setores:</h3>
+        <h3 className={styles.container__title}>Mais detalhes sobre os setores:</h3>
         <div className={styles.container__cards}>
           <Card
             style={{ flexDirection: "column", margin:0 }}

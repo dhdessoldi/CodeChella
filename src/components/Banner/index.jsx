@@ -7,7 +7,7 @@ export default function Banner({ image, title }) {
       className={styles.container}
       style={{ backgroundImage: `url('/assets/banners/banner-${image}.png')` }}
     >
-      <h1>{title}</h1>
+      <h1 className={styles.container__title}>{title}</h1>
     </div>
   );
 }

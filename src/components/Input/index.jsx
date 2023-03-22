@@ -1,11 +1,12 @@
 import React from "react";
-import styles from './Input.module.css'
+import styles from "./Input.module.css";
 
-export default function Input({label, type, placeholder, onChange, value}) {
+export default function Input({ label, type, placeholder, onChange, value }) {
   return (
-    <div className={styles.input}>
-      <label>{label}</label>
+    <div className={styles.container}>
+      <label className={styles.container__label}>{label}</label>
       <input
+        className={styles.container__input}
         type={type}
         value={value}
         onChange={(evento) => onChange(evento.target.value)}

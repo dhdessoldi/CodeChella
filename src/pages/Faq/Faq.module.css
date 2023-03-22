@@ -1,5 +1,5 @@
 .container {
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     padding-bottom: 2rem;
     height: auto;
 }
@@ -9,7 +9,7 @@
     font-weight: 400;
     text-align: center;
     font-size: 2rem;
-    padding: 0 2rem 1.5rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     color: var(--cinza);
 }
 
@@ -23,6 +23,7 @@
 
     .container__title  {
         font-size: 3rem;
+        padding: 3rem 2rem;
     }
 }
 

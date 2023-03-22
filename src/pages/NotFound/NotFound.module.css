@@ -13,9 +13,8 @@
   }
 
   .container__gif {
-    border: none;
-    margin: 0 auto;
-    padding: 0;
+    padding: 3rem;
+    max-width: 200px;
   }
 
   .container__button {
@@ -31,8 +30,7 @@
     }
 
     .container__gif {
-        border: none;
-        margin: 0 auto;
+        max-width: 338px;
       }
 
 }

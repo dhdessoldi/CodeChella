@@ -4,14 +4,15 @@
     align-items: center;
 }
 
-.title {
+.container__title {
     font-family: var(--title-font);
     font-size: 3rem;
     font-weight: 400;
     padding: 32px 0;
+    margin: 2rem 0;
 }
 
-.image {
+.container__image {
     background-image: url('../../../public/assets/posts/home-frame-2.png');
     background-size: cover;
     background-position: 50%;
@@ -21,7 +22,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .image {
+    .container__image {
         height: 338px;
     }
 }

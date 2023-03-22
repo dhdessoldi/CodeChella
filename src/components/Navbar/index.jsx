@@ -22,7 +22,7 @@ export default function Navbar() {
           alt=""
           onClick={()=>setShow(!show)}
                   />
-        <nav id="navbar" className={[styles.navbar, (!show?styles.show:'')].join(' ')}>
+        <nav id="navbar" className={[styles.container__navbar, (!show?styles.container__show:'')].join(' ')}>
           <Link
             to="/experience"
             onClick={()=>setShow(!show)}

@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.navbar {
+.container__navbar {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -18,11 +18,11 @@
     padding: 16px;
 }
 
-.show {
+.container__show {
     display: flex;
 }
 
-.navbar a {
+.container__navbar a {
     text-decoration: none;
     color: var(--branco);
     font-weight: 700;
@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-.navbar a:last-child {
+.container__navbar a:last-child {
     border: none;
     padding-bottom: 0;
 }
@@ -44,7 +44,7 @@
         flex-direction: column;
         gap: 1rem;
     }
-    .navbar {
+    .container__navbar {
         position: inherit;
         display: flex;
         flex-direction: row;
@@ -52,7 +52,7 @@
         gap: 3rem;
     }
 
-    .navbar a {
+    .container__navbar a {
         border: none;
         padding: 0;
     }
@@ -71,7 +71,7 @@
         gap: 1rem;
     }
     
-    .navbar {
+    .container__navbar {
         position: inherit;
         display: flex;
         flex-direction: row;
@@ -79,7 +79,7 @@
         gap: 3rem;
     }
 
-    .navbar a {
+    .container__navbar a {
         border: none;
         padding: 0;
     }

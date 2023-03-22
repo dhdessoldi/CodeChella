@@ -1,10 +1,10 @@
-.input {
+.container {
     display: flex;
     flex-direction: column;
     padding: 0 1.5rem 1rem 1.5rem;
 }
 
-.input label {
+.container__label {
     font-family: var(--text-font);
     font-size: 1.5rem;
     font-weight: 700;
@@ -13,7 +13,7 @@
     color: var(--cinza);
 }
 
-.input input {
+.container__input {
     padding: 0.75rem;
     border: none;
 }

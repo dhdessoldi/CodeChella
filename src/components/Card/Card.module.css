@@ -3,16 +3,17 @@
     text-align: center;
 }
 
-.container img {
+.container__image {
     width: 100%;
 }
 
-.container h3 {
+.container__title {
     font-size: 2rem;
     font-weight: 700;
+    margin: 2rem 0;
 }
 
-.container p {
+.container__text {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 40px;
@@ -23,7 +24,7 @@
         margin: 2rem 80px;
     }
 
-    .container h1 {
+    .container__title {
         font-size: 64px;
     }
   

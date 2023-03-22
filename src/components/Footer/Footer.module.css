@@ -9,12 +9,13 @@
   margin: 0;
 }
 
-.container p {
+.container__text, .container__social_text {
   font-size: 20px;
   line-height: 40px;
+  padding: 1rem 0;
 }
 
-.links {
+.container__social_links {
   display: flex;
   padding: 0;
   gap: 8px;
@@ -22,7 +23,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .social {
+  .container__social {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -37,7 +38,7 @@
     justify-content: space-between;
   }
 
-  .social {
+  .container__social {
     display: flex;
     align-items: center;
     gap: 1rem;

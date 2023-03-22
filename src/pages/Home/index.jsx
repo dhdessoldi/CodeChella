@@ -154,7 +154,7 @@ Aluródromo de São Paulo"
         <Link to="/form">
           <Button text='Comprar ingresso!'/>
         </Link>
-        <h2 className={styles.title}>/Line-Up/</h2>
+        <h2 className={styles.container__title}>/Line-Up/</h2>
         <Lineup
           lineup={lineup1}
           date="SÁBADO <11/03>"
@@ -165,7 +165,7 @@ Aluródromo de São Paulo"
           date="DOMINGO <12/03>"
           mainEvent="Lana Del Ploy"
         />
-        <div className={styles.image} />
+        <div className={styles.container__image} />
       </section>
     </>
   );

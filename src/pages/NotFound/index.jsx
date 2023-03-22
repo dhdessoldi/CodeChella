@@ -2,6 +2,7 @@ import Button from "components/Button";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./NotFound.module.css";
+import gif from "./giphy.gif";
 
 export default function NotFound() {
   return (
@@ -9,16 +10,11 @@ export default function NotFound() {
       <h1 className={styles.container__title}>
         Opa! Essa página que você está procurando não existe.
       </h1>
-      <div className={styles.container__gif}>
-        <iframe
-          title="John Travolta is lost"
-          src="https://giphy.com/embed/26AHs3p7U7H5MU2gU"
-          height="400"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-
+      <img
+        className={styles.container__gif}
+        src={gif}
+        alt="John Travolta confused in pixel art from https://giphy.com/"
+      />
       <Link to="/">
         <Button text="Voltar" />
       </Link>

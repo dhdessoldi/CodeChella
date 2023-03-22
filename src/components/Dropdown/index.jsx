@@ -49,8 +49,8 @@ export default function Dropdown({ label, value, onChange }) {
 
   return (
     <div className={styles.dropdown}>
-      <label>{label}</label>
-      <select
+      <label className={styles.dropdown__label}>{label}</label>
+      <select className={styles.dropdown__select}
         required
         value={value}
         onChange={(evento) => onChange(evento.target.value)}
